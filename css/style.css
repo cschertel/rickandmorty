@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #292929;
+    color: #292929;
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+main {
+    min-height: 60vh;
+}
+
+ul {
+    list-style: none;
+    color: #42B4CA;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #292929;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+nav ul li,
+button,
+ul li i {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+nav li {
+    border: 1px solid transparent;
+    padding: 10px 25px 10px 0px;
+    border-radius: 25px;
+    float: left;
+}
+
+nav ul li:hover {
+    color: rgba(135, 230, 255, 1);
+}
+
+.logo img {
+    width: 14rem;
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #42B4CA;
+}
+
+i {
+    font-size: 1rem;
+}
+
+.m-botton-2 {
+    margin-bottom: 2rem;
+}
+
+.m-top-2 {
+    margin-top: 2rem;
+}
+
+.m-top-3 {
+    margin-top: 3rem;
+}
+
+.m-top-1-5 {
+    margin-top: 1.5rem;
+}
+
+.m-lr-3 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.p-lr-3 {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.p-top3 {
+    padding: 3rem 0 0 0;
+}
+
+.pag-actual {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 25px;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid rgba(135, 230, 255, 1);
+}
+
+.cant-pag {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+footer {
+    padding: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 5rem;
+    width: 100%;
+    background: -moz-linear-gradient(180deg, rgba(41, 41, 41, 1) 10%, rgba(135, 230, 255, 1) 600%);
+    background: -webkit-linear-gradient(180deg, rgba(41, 41, 41, 1) 10%, rgba(135, 230, 255, 1) 600%);
+    background: linear-gradient(180deg, rgba(41, 41, 41, 1) 10%, rgba(135, 230, 255, 1) 600%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929", endColorstr="#87e6ff", GradientType=1);
+}
+
+.datos-variables {
+    color: #42B4CA;
+    font-size: 1.2rem;
+}
+
+.personajes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    row-gap: 2.8rem;
+}
+
+.card {
+    width: 23.875%;
+    background-color: #fff874;
+    border-radius: 2rem;
+    border: 1px solid #292929;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.card-image {
+    position: relative;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+
+.card-image img {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    transition: transform 1s;
+}
+
+.card-image:hover img {
+    transform: scale(1.05);
+    filter: hue-rotate(60deg);
+}
+
+.card:hover {
+    box-shadow: 0px 15px 0px 0px rgba(135, 230, 255, 1);
+    -webkit-box-shadow: 0px 15px 0px 0px rgba(135, 230, 255, 1);
+    -moz-box-shadow: 0px 15px 0px 0px rgba(135, 230, 255, 1);
+}
+
+.card-content {
+    line-height: 1.6rem;
+    flex: 1 1 auto;
+}
+
+.card-content,
+.b-vermas {
+    padding: 1.5rem;
+}
+
+.b-vermas a,
+button {
+    background-color: rgba(135, 230, 255, 1);
+    border: 1px solid #292929;
+    border-radius: 25px;
+    color: #292929;
+    display: inline-block;
+}
+
+.b-vermas a {
+    padding: 10px 20px;
+}
+
+button {
+    padding: 10px 13px;
+}
+
+.b-vermas a:hover,
+button:hover {
+    background-color: #45E9EB;
+}
+
+.container-paginador {
+    text-align: center;
+}
+
+button {
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+}
+
+.pagination button:disabled {
+    background-color: #E5E5E5;
+    color: #737374;
+    cursor: not-allowed;
+    border-color: #737374;
+}
+
+.categoria {
+    font-weight: 600;
+}
+
+
+.icons-redes ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+i.bi.bi-list {
+    display: none;
+    color: #292929;
+    font-size: 24px;
+}
+
+a i {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: 0.5s ease-out;
+    margin-right: 5px;
+    padding: 8px 10.5px;
+    color: rgba(135, 230, 255, 1);
+}
+
+a:hover i {
+    border: 1px solid;
+}
+
+
+@media only screen and (max-width: 999px) {
+    .card {
+        width: 32%;
+    }
+
+    .personajes-container {
+        gap: 2%;
+        row-gap: 2.2rem;
+    }
+
+    nav ul {
+        padding-top: 10px;
+        display: inline-block;
+    }
+
+    .logo img {
+        width: 13rem;
+    }
+
+    .ord-2 {
+        order: 2;
+    }
+
+}
+
+@media only screen and (max-width: 699px) {
+    .card {
+        width: 49%;
+    }
+
+    .m-lr-3 {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .p-lr-3 {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .card {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 10px 20px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .datos-variables {
+        font-size: 1.56rem;
+    }
+
+    nav ul li:hover {
+        border: 1px solid #42B4CA;
+        color: #42B4CA;
+    }
+}
